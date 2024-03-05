@@ -121,6 +121,19 @@ function displayProducts(){
 
 // function to add to cart 
 
+// function addToCart(itemID, quantity){
+//     const selectedProduct = ecommerceProduct.find((item) => item.productId === itemID)
+//     if (selectedProduct && (selectedProduct.productQuantity >= quantity)) {
+//         cart.push({product: selectedProduct.productName, productPrice:selectedProduct.productPrice, quantity:quantity})
+//         console.log(cart)
+//         console.log(selectedProduct.productName + "Item added to cart")
+//     }else{
+//         console.log("oops no product")
+//     }
+// }
+
+
+
 function addToCart(itemID, quantity){
     const selectedProduct = ecommerceProduct.find((item) => item.productId === itemID)
     if (selectedProduct && (selectedProduct.productQuantity >= quantity)) {
